@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+{% load crispy_forms_tags %}
+{% load image_wrapper %}
+{% block content %}
+    <br>
+    <center>
+        <h1>NYCart Home Page</h1>
+        <br>
+        {% pic_rand height=400 width=1200 %}
+    </center>
+{% endblock %}
