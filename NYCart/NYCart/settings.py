@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'pages.apps.PagesConfig',
     'app_api.apps.AppApiConfig',
+    'useradmin.apps.UseradminConfig',
 ]
 
 MIDDLEWARE = [

@@ -5,4 +5,5 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='homepage'),
+    path('add_vendor/', views.addVendor.as_view(), name='add_vendor')
 ]

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>New Vendor</title>
+{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <br>
+    <center>
+        <h1>Add new vendor</h1>
+        <form method="post">
+            {% csrf_token %}
+            <br>
+            {{ form.as_p }}
+            <input type="submit" value="Add New Vendor">
+        </form>
+    </center>
+{% endblock %}
